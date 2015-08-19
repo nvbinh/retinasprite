@@ -1,0 +1,87 @@
+@import "compass/css3";
+@import "compass/typography";
+@import "core";
+
+
+$normal-spacing: 10px;
+$retina-spacing: 10px;
+
+$normal: sprite-map("normal/*.png", $spacing: 10px);
+$retina: sprite-map("retina/*.png", $spacing: 10px);
+
+[class^="icon-"],
+[class*=" icon-"]{
+  display: block;
+  //@include size(120);
+}
+
+.food-icons-section {
+	.span2 {
+		display: inline-block;
+	}
+}
+.food-icon-holder {
+	display: inline-block;
+	vertical-align: baseline;
+	zoom: 1;
+	margin: .5em auto;
+	text-align: center;
+	background-color: #fae3b4;
+	padding: 5px;
+	border: 1px solid #d89048;
+}
+
+.icon-beer{
+  @include retina-sprite-background(beer,$normal,$retina);
+}
+.icon-berry{
+  @include retina-sprite-background(berry,$normal,$retina);
+}
+.icon-bone{
+  @include retina-sprite-background(bone,$normal,$retina);
+}
+.icon-bowl{
+  @include retina-sprite-background(bowl,$normal,$retina);
+}
+.icon-burger{
+  @include retina-sprite-background(burger,$normal,$retina);
+}
+.icon-cone-icecream{
+  @include retina-sprite-background(cone-icecream,$normal,$retina);
+}
+.icon-doughnut{
+  @include retina-sprite-background(doughnut,$normal,$retina);
+}
+.icon-drinks{
+  @include retina-sprite-background(drinks,$normal,$retina);
+}
+.icon-egg-poach{
+  @include retina-sprite-background(egg-poach,$normal,$retina);
+}
+.icon-hotdog{
+  @include retina-sprite-background(hotdog,$normal,$retina);
+}
+.icon-juice{
+  @include retina-sprite-background(juice,$normal,$retina);
+}
+.icon-lemon{
+  @include retina-sprite-background(lemon,$normal,$retina);
+}
+.icon-lemon-2{
+  @include retina-sprite-background(lemon-2,$normal,$retina);
+}
+.icon-lollipop{
+  @include retina-sprite-background(lollipop,$normal,$retina);
+}
+.icon-pomegranete{
+  @include retina-sprite-background(pomegranete,$normal,$retina);
+}
+.icon-popcorn{
+  @include retina-sprite-background(popcorn,$normal,$retina);
+}
+.icon-pumpkin{
+  @include retina-sprite-background(pumpkin,$normal,$retina);
+}
+.icon-watermelon{
+  @include retina-sprite-background(watermelon,$normal,$retina);
+}
